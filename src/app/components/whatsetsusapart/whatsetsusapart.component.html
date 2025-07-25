@@ -1,0 +1,22 @@
+<div class="wsua-section container">
+  <h2 class="wsua-title">What Sets Us Apart</h2>
+  <div class="wsua-features-col">
+    <div class="wsua-features-grid">
+      <div class="wsua-feature-card" *ngFor="let feature of features">
+        <div class="wsua-feature-inner-card">
+          <img [src]="feature.icon" [alt]="feature.title" class="wsua-feature-img" />
+        </div>
+        <div class="wsua-feature-text">
+          <div class="wsua-feature-title">{{ feature.title }}</div>
+          <div class="wsua-feature-subtitle">{{ feature.subtitle }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="wsua-bottom">
+      <div class="wsua-quote">
+        <em>Because real life deserves small, beautiful things.</em>
+      </div>
+      <a class="wsua-cta" href="#stillness">begin your journey in stillness</a>
+    </div>
+  </div>
+</div>

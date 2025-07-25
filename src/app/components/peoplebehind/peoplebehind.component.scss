@@ -1,0 +1,136 @@
+.pb-section {
+  //background: #faf9f3;
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  //box-shadow: 0 2px 16px rgba(32, 77, 57, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pb-title {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 2.3rem;
+  color: #204d39;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  border-bottom: 3px solid #b6b6a8;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+.pb-subtitle {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.25rem;
+  color: #3d4d44;
+  opacity: 0.85;
+  text-align: center;
+  margin-bottom: 2.2rem;
+  font-style: italic;
+}
+
+.pb-content-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  width: 100%;
+  margin-bottom: 2.2rem;
+}
+
+.pb-content-col {
+  flex: 1 1 0;
+  min-width: 220px;
+  max-width: 320px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.08rem;
+  color: #3d4d44;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+.pb-image-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 220px;
+  max-width: 320px;
+}
+
+.pb-team-img {
+  width: 100%;
+  max-width: 260px;
+  margin-bottom: 0.7rem;
+  border-radius: 1rem;
+//   box-shadow: 0 2px 8px rgba(32, 77, 57, 0.08);
+//   background: #fff;
+}
+
+.pb-signature {
+  font-family: 'Dancing Script', cursive, 'Brush Script MT', cursive;
+  font-size: 1.1rem;
+  color: #204d39;
+  opacity: 0.85;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+.pb-highlight-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.pb-highlight {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.15rem;
+  color: #c9a14a;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+  margin-bottom: 1.1rem;
+  text-transform: uppercase;
+}
+
+.pb-cta {
+  display: inline-block;
+  background: #204d39;
+  color: #faf9f3;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1rem;
+  padding: 0.6rem 2.2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  box-shadow: 0 2px 8px rgba(32, 77, 57, 0.10);
+  transition: background 0.2s, color 0.2s;
+  border: 1.5px solid #c9a14a;
+}
+.pb-cta:hover,
+.pb-cta:focus {
+  background: #3d4d44;
+  color: #fff;
+}
+
+@media (max-width: 1100px) {
+  .pb-content-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .pb-content-col,
+  .pb-image-col {
+    max-width: 100%;
+    text-align: center;
+
+  }
+  .pb-team-img {
+    max-width: 220px;
+  }
+}

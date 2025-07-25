@@ -1,0 +1,209 @@
+.wsua-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+//   background: #f7f8f3;
+//   border-radius: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  // box-shadow: 0 2px 16px rgba(32, 77, 57, 0.06);
+}
+
+.wsua-features-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 900px; // or 1000px, adjust as needed for your design
+}
+
+.wsua-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.2rem 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  justify-items: center;
+  align-items: stretch;
+}
+
+.wsua-feature-card {
+  background: #f3f2ea;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(32, 77, 57, 0.08);
+  padding: 1.2rem 1.1rem 1.1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+  width: 100%;
+  max-width: 260px;
+  min-width: 180px;
+  margin: 0 auto;
+  &:hover {
+    box-shadow: 0 4px 18px rgba(32, 77, 57, 0.13);
+  }
+}
+
+.wsua-feature-img-wrap {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wsua-feature-img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 0.5rem;
+  object-fit: contain;
+  background: transparent;
+  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+.wsua-feature-card:hover .wsua-feature-img,
+.wsua-feature-card:focus-within .wsua-feature-img {
+  transform: scale(1.12);
+}
+
+.wsua-feature-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+.wsua-feature-card:hover .wsua-feature-text,
+.wsua-feature-card:focus-within .wsua-feature-text {
+  transform: translateY(12px);
+}
+
+.wsua-feature-title {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.1rem;
+  color: #204d39;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  margin-top: 0.2rem;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+}
+
+.wsua-feature-subtitle {
+  font-size: 0.98rem;
+  color: #3d4d44;
+  font-family: 'Inter', sans-serif;
+  opacity: 0.85;
+  margin-bottom: 0.1rem;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.wsua-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.2rem;
+  width: 100%;
+}
+
+.wsua-quote {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.15rem;
+  color: #3d4d44;
+  opacity: 0.85;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.wsua-cta {
+  display: inline-block;
+  background: #204d39;
+  color: #f7f8f3;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1rem;
+  padding: 0.6rem 2.2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  box-shadow: 0 2px 8px rgba(32, 77, 57, 0.10);
+  transition: background 0.2s, color 0.2s;
+  border: 1.5px solid #b6b6a8;
+}
+.wsua-cta:hover,
+.wsua-cta:focus {
+  background: #3d4d44;
+  color: #fff;
+}
+
+.wsua-title {
+  width: 100%;
+  text-align: center;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 2.5rem;
+  color: #204d39;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 2.2rem;
+  margin-top: 0;
+  position: relative;
+}
+
+.wsua-title::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 3px;
+  background: #204d39;
+  border-radius: 2px;
+  margin: 1rem auto 0 auto;
+  opacity: 0.7;
+}
+
+@media (max-width: 1100px) {
+  .wsua-features-grid {
+    gap: 1.2rem 1.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .wsua-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem 1.2rem;
+  }
+  .wsua-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+  .wsua-title::after {
+    width: 2.5rem;
+    margin-top: 0.5rem;
+  }
+  .wsua-feature-card {
+    min-width: unset;
+    max-width: 95vw;
+    width: 100%;
+  }
+  .wsua-bottom {
+    margin-top: 0.5rem;
+  }
+}
+
+// @media (max-width: 700px) {
+//   .wsua-features-grid {
+//     grid-template-columns: 1fr;
+//     gap: 1rem;
+//   }
+//   .wsua-feature-card {
+//     max-width: 95vw;
+//     min-width: unset;
+//     width: 100%;
+//   }
+// }

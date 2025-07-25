@@ -1,0 +1,28 @@
+.storymap-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 5vw; // Responsive horizontal padding
+  background: #faf9f3;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.storymap-center-img {
+  max-width: 54rem;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.3rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+// @media (max-width: 700px) {
+//   .storymap-section {
+//     padding: 1.2rem 1vw; // Less padding on very small screens
+//   }
+//   .storymap-center-img {
+//     max-width: 98vw;
+//   }
+// }

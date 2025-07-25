@@ -1,0 +1,100 @@
+/* 1. Remove default browser margin/padding and set box-sizing */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: #fdfdf7; // or your preferred background
+}
+
+/* 2. Set box-sizing globally */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* 3. Make images and media responsive */
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 4. Set base font size for easier rem scaling */
+html {
+  font-size: 16px;
+}
+
+/* 5. Responsive typography (optional, but recommended) */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* 6. Utility: Remove tap highlight on mobile */
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 7. Responsive container utility (optional) */
+.container {
+  width: auto;
+  //max-width: 75rem; // 1200px -> 75rem
+  margin: 0 auto;
+  //padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Media queries for breakpoints */
+@media (max-width: 56.25rem) { /* 900px */
+  html {
+    font-size: 12px;
+  }
+  .container {
+    //padding: 0 0.75rem;
+    max-width: 100vw;
+    width: auto;
+  }
+}
+
+@media (max-width: 37.5rem) { /* 600px */
+  html {
+    font-size: 11px;
+  }
+  .container {
+    //padding: 0 0.5rem;
+    max-width: 100vw;
+  }
+}
+
+/* Optional: Style scrollbars and text selection for a more polished look */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background: #eee;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 0.25rem;
+}
+::selection {
+  background: #204d39;
+  color: #fff;
+}
