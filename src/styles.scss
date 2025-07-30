@@ -1,3 +1,25 @@
+/* Font Face Declarations */
+@font-face {
+  font-family: 'OrganGrinder';
+  src: url('./assets/fonts/OrganGrinder Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Chromate-Script';
+  src: url('./assets/fonts/Chromate-Script.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lora';
+  src: url('./assets/fonts/Lora-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 /* 1. Remove default browser margin/padding and set box-sizing */
 html, body {
   margin: 0;
@@ -37,7 +59,18 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* 7. Responsive container utility (optional) */
+/* 7. Body padding when header is scrolled */
+body.header-scrolled {
+  padding-top: 3.5rem; /* 56px - matches scrolled header height */
+}
+
+@media (max-width: 37.5rem) { /* 600px */
+  body.header-scrolled {
+    padding-top: 3rem; /* 48px - matches scrolled header height on mobile */
+  }
+}
+
+/* 8. Responsive container utility (optional) */
 .container {
   width: auto;
   //max-width: 75rem; // 1200px -> 75rem

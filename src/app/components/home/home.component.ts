@@ -7,11 +7,13 @@ import { IntroComponent } from '../intro/intro.component';
 import { WhatSetsUsApartComponent } from "../whatsetsusapart/whatsetsusapart.component";
 import { PeoplebehindComponent } from "../peoplebehind/peoplebehind.component";
 import { StorymapComponent } from "../storymap/storymap.component";
+import { FooterComponent } from "../footer/footer.component";
+import { ReserveButtonComponent } from "../reserve-button/reserve-button.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [BannerComponent, HeaderComponent, HeroComponent, TrustBatchesComponent, IntroComponent, WhatSetsUsApartComponent, PeoplebehindComponent, StorymapComponent],
+  imports: [BannerComponent, HeaderComponent, HeroComponent, FooterComponent, TrustBatchesComponent, IntroComponent, WhatSetsUsApartComponent, PeoplebehindComponent, StorymapComponent, ReserveButtonComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

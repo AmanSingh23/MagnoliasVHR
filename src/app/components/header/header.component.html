@@ -1,19 +1,19 @@
-<nav class="header-nav">
+<nav class="header-nav" [class.scrolled]="isScrolled">
   <div class="container">
     <div class="header-link-group flex-row">
-      <div>
+      <div class="nav-link" routerLink="/stays">
         <div>THE</div>
         <div>STAYS</div>
       </div>
-      <div>
+      <div class="nav-link" routerLink="/services">
         <div>CURATED</div>
         <div>SERVICES</div>
       </div>
-      <div>
+      <div class="nav-link" routerLink="/stories">
         <div>OUR</div>
         <div>STORIES</div>
       </div>
-      <div>
+      <div class="nav-link" routerLink="/nurturing">
         <div>NURTURING</div>
         <div>TOMORROW</div>
       </div>

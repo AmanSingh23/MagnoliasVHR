@@ -1,0 +1,42 @@
+<!-- Testimonials Section -->
+<div class="testimonials-section">
+  <div class="testimonials-container">
+    <!-- Navigation Arrow Left -->
+    <button class="nav-arrow left-arrow" (click)="previousTestimonial()">
+      <span>&lt;</span>
+    </button>
+    
+    <!-- Main Testimonial Content -->
+    <div class="testimonial-content">
+      <div class="quote-marks top-quotes">
+        <img src="../../../assets/images/Inverter coma.png" alt="Quote mark" class="quote-image" />
+      </div>
+      
+      <div class="testimonial-text">
+        <p class="main-quote">{{ getCurrentTestimonial().quote }}</p>
+        <p class="attribution">{{ getCurrentTestimonial().attribution }}</p>
+      </div>
+      
+      <div class="quote-marks bottom-quotes">
+        <img src="../../../assets/images/Inverter coma.png" alt="Quote mark" class="quote-image" />
+      </div>
+      
+      <!-- <div class="testimonial-counter">{{ getTestimonialNumber() }}</div> -->
+    </div>
+    
+    <!-- Navigation Arrow Right -->
+    <button class="nav-arrow right-arrow" (click)="nextTestimonial()">
+      <span>&gt;</span>
+    </button>
+  </div>
+  
+  <!-- Pagination Dots -->
+  <div class="pagination-dots">
+    <span 
+      *ngFor="let testimonial of testimonials; let i = index" 
+      class="dot" 
+      [class.active]="i === currentTestimonialIndex"
+      (click)="goToTestimonial(i)">
+    </span>
+  </div>
+</div>
